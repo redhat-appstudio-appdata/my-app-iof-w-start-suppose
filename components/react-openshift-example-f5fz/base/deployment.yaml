@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: react-openshift-example-f5fz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:iof-w-react-openshift-example-f5fz
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9330d1ca61ce5da0302df1687eba90f82beef394fcc159a40a79b8e1b2ca63b3
         name: my-nodejs
         ports:
         - containerPort: 3001
