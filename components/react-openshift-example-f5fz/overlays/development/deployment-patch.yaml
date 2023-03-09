@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: react-openshift-example-f5fz
+  namespace: ymaheshw-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9330d1ca61ce5da0302df1687eba90f82beef394fcc159a40a79b8e1b2ca63b3
+        name: my-nodejs
+        resources: {}
+status: {}
